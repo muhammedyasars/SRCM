@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1B3A6B;
+  --navy-light: #243F7A;
+  --navy-dark: #142d54;
+  --green: #2D7A3A;
+  --green-light: #3A9447;
+  --green-pale: #e8f5ea;
+  --bg-light: #F0F4F8;
+  --bg-lighter: #F8FAFC;
+  --text-dark: #0F1F3D;
+  --text-muted: #5A6A85;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Gradient backgrounds */
+.hero-gradient {
+  background: linear-gradient(135deg, #0d2347 0%, #1B3A6B 40%, #1e4d7a 70%, #1a5c6e 100%);
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, #F0F4F8 0%, #ffffff 100%);
+}
+
+/* Floating card animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.float-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-card:nth-child(2) { animation-delay: 1s; }
+.float-card:nth-child(3) { animation-delay: 2s; }
+.float-card:nth-child(4) { animation-delay: 3s; }
+
+/* Smooth transitions */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--green);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Service card hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(27, 58, 107, 0.15);
+}
+
+/* Green accent line */
+.accent-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green), var(--green-light));
+  border-radius: 2px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 3px;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--green), var(--green-light));
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(45, 122, 58, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--navy);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline:hover {
+  background: var(--navy);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: white;
+}
