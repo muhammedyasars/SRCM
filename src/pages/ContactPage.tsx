@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, type FormEvent, type ChangeEvent } from 'react';
 import {
   PhoneIcon,
   MailIcon,
@@ -25,7 +25,7 @@ interface FormErrors {
   email?: string;
   message?: string;
 }
-export function ContactPage({ onNavigate }: ContactPageProps) {
+export function ContactPage({ onNavigate: _onNavigate }: ContactPageProps) {
   const [form, setForm] = useState<FormState>({
     name: '',
     email: '',
@@ -49,7 +49,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
     setIsSubmitting(true);
@@ -59,7 +59,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
     setSubmitted(true);
   };
   const handleChange = (
-  e: React.ChangeEvent<
+  e: ChangeEvent<
     HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
 
   {

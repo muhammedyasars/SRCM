@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MenuIcon, XIcon, PhoneIcon } from 'lucide-react';
 type Page = 'home' | 'services' | 'careers' | 'contact';
 interface NavbarProps {
