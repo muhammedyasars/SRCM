@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BriefcaseIcon,
   MapPinIcon,
@@ -466,3 +465,4 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
     </main>);
 
 }
+export default CareersPage;

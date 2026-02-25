@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   ShieldCheckIcon,
   FileTextIcon,
@@ -304,3 +303,4 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
     </main>);
 
 }
+export default ServicesPage;

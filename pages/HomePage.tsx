@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   ArrowRightIcon,
   CheckCircleIcon,
@@ -574,3 +573,4 @@ export function HomePage({ onNavigate }: HomePageProps) {
     </main>);
 
 }
+export default HomePage;

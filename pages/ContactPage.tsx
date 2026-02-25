@@ -459,3 +459,4 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
     </main>);
 
 }
+export default ContactPage;
