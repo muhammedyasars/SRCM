@@ -9,13 +9,14 @@ import {
   TwitterIcon,
   FacebookIcon } from
 'lucide-react';
+import Link from 'next/link';
+import { ROUTES } from '../constants';
 type Page = 'home' | 'services' | 'careers' | 'contact';
 interface FooterProps {
-  onNavigate: (page: Page) => void;
+  onNavigate?: (page: Page) => void;
 }
 export function Footer({ onNavigate }: FooterProps) {
   const handleNav = (page: Page) => {
-    onNavigate(page);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -71,29 +72,34 @@ export function Footer({ onNavigate }: FooterProps) {
               {[
               {
                 label: 'Home',
-                page: 'home' as Page
+                page: 'home' as Page,
+                href: ROUTES.HOME
               },
               {
                 label: 'Our Services',
-                page: 'services' as Page
+                page: 'services' as Page,
+                href: ROUTES.SERVICES
               },
               {
                 label: 'Careers',
-                page: 'careers' as Page
+                page: 'careers' as Page,
+                href: ROUTES.CAREERS
               },
               {
                 label: 'Contact Us',
-                page: 'contact' as Page
+                page: 'contact' as Page,
+                href: ROUTES.CONTACT
               }].
               map((item) =>
               <li key={item.page}>
-                  <button
+                  <Link
+                  href={item.href}
                   onClick={() => handleNav(item.page)}
                   className="flex items-center gap-2 text-gray-400 hover:text-[#3A9447] transition-colors text-sm font-body group">
 
                     <ArrowRightIcon className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     {item.label}
-                  </button>
+                  </Link>
                 </li>
               )}
             </ul>
@@ -115,13 +121,14 @@ export function Footer({ onNavigate }: FooterProps) {
               'RCM Consultancy'].
               map((service) =>
               <li key={service}>
-                  <button
+                  <Link
+                  href={ROUTES.SERVICES}
                   onClick={() => handleNav('services')}
                   className="flex items-center gap-2 text-gray-400 hover:text-[#3A9447] transition-colors text-sm font-body group">
 
                     <ArrowRightIcon className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     {service}
-                  </button>
+                  </Link>
                 </li>
               )}
             </ul>

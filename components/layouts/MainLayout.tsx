@@ -7,8 +7,8 @@ import { PageKey } from '../../utils/navigation';
 
 interface MainLayoutProps {
   children: React.ReactNode;
-  activePage: PageKey;
-  onNavigate: (page: PageKey) => void;
+  activePage?: PageKey;
+  onNavigate?: (page: PageKey) => void;
 }
 
 export const MainLayout = ({ children, activePage, onNavigate }: MainLayoutProps) => {

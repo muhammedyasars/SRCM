@@ -12,9 +12,11 @@ import {
   ArrowRightIcon,
   CheckCircleIcon } from
 'lucide-react';
+import Link from 'next/link';
+import { ROUTES } from '../constants';
 type Page = 'home' | 'services' | 'careers' | 'contact';
 interface ServicesPageProps {
-  onNavigate: (page: Page) => void;
+  onNavigate?: (page: Page) => void;
 }
 interface Service {
   id: string;
@@ -27,7 +29,6 @@ interface Service {
 }
 export function ServicesPage({ onNavigate }: ServicesPageProps) {
   const handleNav = (page: Page) => {
-    onNavigate(page);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -284,19 +285,21 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             care.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
+            <Link
+              href={ROUTES.CONTACT}
               onClick={() => handleNav('contact')}
               className="btn-primary text-base px-8 py-3.5">
 
               Get Started Today
               <ArrowRightIcon className="w-5 h-5" />
-            </button>
-            <button
+            </Link>
+            <Link
+              href={ROUTES.CAREERS}
               onClick={() => handleNav('careers')}
               className="btn-outline text-base px-8 py-3.5">
 
               Join Our Team
-            </button>
+            </Link>
           </div>
         </div>
       </section>

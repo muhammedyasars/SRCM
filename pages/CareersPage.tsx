@@ -9,13 +9,14 @@ import {
   HeartIcon,
   StarIcon } from
 'lucide-react';
+import Link from 'next/link';
+import { ROUTES } from '../constants';
 type Page = 'home' | 'services' | 'careers' | 'contact';
 interface CareersPageProps {
-  onNavigate: (page: Page) => void;
+  onNavigate?: (page: Page) => void;
 }
 export function CareersPage({ onNavigate }: CareersPageProps) {
   const handleNav = (page: Page) => {
-    onNavigate(page);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -182,12 +183,13 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
                   </div>
                 </div>
               </div>
-              <button
+              <Link
+                href={ROUTES.CONTACT}
                 onClick={() => handleNav('contact')}
                 className="btn-primary text-sm px-5 py-2.5 flex-shrink-0 self-start sm:self-center">
 
                 Apply Now <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* IP Coder / OP Coder */}
@@ -232,12 +234,13 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
                   </div>
                 </div>
               </div>
-              <button
+              <Link
+                href={ROUTES.CONTACT}
                 onClick={() => handleNav('contact')}
                 className="btn-primary text-sm px-5 py-2.5 flex-shrink-0 self-start sm:self-center">
 
                 Apply Now <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Approval Coder */}
@@ -282,12 +285,13 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
                   </div>
                 </div>
               </div>
-              <button
+              <Link
+                href={ROUTES.CONTACT}
                 onClick={() => handleNav('contact')}
                 className="btn-primary text-sm px-5 py-2.5 flex-shrink-0 self-start sm:self-center">
 
                 Apply Now <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Resubmission Officer */}
@@ -332,12 +336,13 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
                   </div>
                 </div>
               </div>
-              <button
+              <Link
+                href={ROUTES.CONTACT}
                 onClick={() => handleNav('contact')}
                 className="btn-primary text-sm px-5 py-2.5 flex-shrink-0 self-start sm:self-center">
 
                 Apply Now <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Jr. Case Manager */}
@@ -382,12 +387,13 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
                   </div>
                 </div>
               </div>
-              <button
+              <Link
+                href={ROUTES.CONTACT}
                 onClick={() => handleNav('contact')}
                 className="btn-primary text-sm px-5 py-2.5 flex-shrink-0 self-start sm:self-center">
 
                 Apply Now <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Submission Officer */}
@@ -432,12 +438,13 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
                   </div>
                 </div>
               </div>
-              <button
+              <Link
+                href={ROUTES.CONTACT}
                 onClick={() => handleNav('contact')}
                 className="btn-primary text-sm px-5 py-2.5 flex-shrink-0 self-start sm:self-center">
 
                 Apply Now <ArrowRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -449,20 +456,20 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
           <h2 className="font-heading font-bold text-3xl text-[#1B3A6B] mb-4">
             Don't See Your Role?
           </h2>
-          <p className="text-gray-600 font-body mb-8 leading-relaxed">
-            We're always looking for talented healthcare professionals. Send us
+          <p className="text-gray-600 font-body text-lg mb-8 leading-relaxed">
+            We're always looking for talented professionals to join our team. Send us
             your CV and we'll reach out when a suitable position opens.
           </p>
-          <button
+          <Link
+            href={ROUTES.CONTACT}
             onClick={() => handleNav('contact')}
             className="btn-primary text-base px-8 py-3.5">
 
             Send Your CV
-            <ArrowRightIcon className="w-5 h-5" />
-          </button>
+          </Link>
         </div>
       </section>
     </main>);
-
 }
+
 export default CareersPage;

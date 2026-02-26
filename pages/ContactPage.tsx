@@ -8,9 +8,11 @@ import {
   CheckCircleIcon,
   ClockIcon } from
 'lucide-react';
+import Link from 'next/link';
+import { ROUTES } from '../constants';
 type Page = 'home' | 'services' | 'careers' | 'contact';
 interface ContactPageProps {
-  onNavigate: (page: Page) => void;
+  onNavigate?: (page: Page) => void;
 }
 interface FormState {
   name: string;

@@ -12,13 +12,14 @@ import {
   FileTextIcon,
   ZapIcon } from
 'lucide-react';
+import Link from 'next/link';
+import { ROUTES } from '../constants';
 type Page = 'home' | 'services' | 'careers' | 'contact';
 interface HomePageProps {
-  onNavigate: (page: Page) => void;
+  onNavigate?: (page: Page) => void;
 }
 export function HomePage({ onNavigate }: HomePageProps) {
   const handleNav = (page: Page) => {
-    onNavigate(page);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -70,19 +71,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <button
+                <Link
+                  href={ROUTES.SERVICES}
                   onClick={() => handleNav('services')}
                   className="btn-primary text-base">
 
                   Explore Our Services
                   <ArrowRightIcon className="w-5 h-5" />
-                </button>
-                <button
+                </Link>
+                <Link
+                  href={ROUTES.CONTACT}
                   onClick={() => handleNav('contact')}
                   className="btn-outline-white text-base">
 
                   Contact Us
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -289,13 +292,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
               </div>
 
-              <button
+              <Link
+                href={ROUTES.SERVICES}
                 onClick={() => handleNav('services')}
                 className="btn-primary">
 
                 Discover Our Services
                 <ArrowRightIcon className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -332,12 +336,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Securing payer approval in advance to confirm coverage and
                 prevent reimbursement delays.
               </p>
-              <button
+              <Link
+                href={ROUTES.SERVICES}
                 onClick={() => handleNav('services')}
                 className="mt-4 flex items-center gap-1 text-[#2D7A3A] text-sm font-heading font-semibold hover:gap-2 transition-all">
 
                 Learn more <ChevronRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Card 2 */}
@@ -352,12 +357,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Collaborating with physicians to strengthen documentation
                 practices and safeguard revenue integrity.
               </p>
-              <button
+              <Link
+                href={ROUTES.SERVICES}
                 onClick={() => handleNav('services')}
                 className="mt-4 flex items-center gap-1 text-[#2D7A3A] text-sm font-heading font-semibold hover:gap-2 transition-all">
 
                 Learn more <ChevronRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Card 3 */}
@@ -372,12 +378,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Enhancing your team's capabilities to achieve sustainable
                 revenue optimization.
               </p>
-              <button
+              <Link
+                href={ROUTES.SERVICES}
                 onClick={() => handleNav('services')}
                 className="mt-4 flex items-center gap-1 text-[#2D7A3A] text-sm font-heading font-semibold hover:gap-2 transition-all">
 
                 Learn more <ChevronRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
 
             {/* Card 4 */}
@@ -392,23 +399,25 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Using innovative analytics and workflows to minimize denials
                 while protecting and recovering revenue.
               </p>
-              <button
+              <Link
+                href={ROUTES.SERVICES}
                 onClick={() => handleNav('services')}
                 className="mt-4 flex items-center gap-1 text-[#2D7A3A] text-sm font-heading font-semibold hover:gap-2 transition-all">
 
                 Learn more <ChevronRightIcon className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
 
           <div className="text-center mt-10">
-            <button
+            <Link
+              href={ROUTES.SERVICES}
               onClick={() => handleNav('services')}
               className="btn-outline">
 
               View All Services
               <ArrowRightIcon className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -554,19 +563,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Empowering providers to deliver outstanding patient care.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
+            <Link
+              href={ROUTES.CONTACT}
               onClick={() => handleNav('contact')}
               className="btn-primary text-base px-8 py-3.5">
 
               📞 Contact Us Today
               <ArrowRightIcon className="w-5 h-5" />
-            </button>
-            <button
+            </Link>
+            <Link
+              href={ROUTES.SERVICES}
               onClick={() => handleNav('services')}
               className="btn-outline text-base px-8 py-3.5">
 
               Explore Services
-            </button>
+            </Link>
           </div>
         </div>
       </section>
