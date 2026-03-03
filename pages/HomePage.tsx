@@ -105,17 +105,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="float-card absolute -left-12 top-12 bg-white rounded-2xl shadow-xl p-4 w-44">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 rounded-xl bg-[#e8f5ea] flex items-center justify-center">
-                    <UsersIcon className="w-5 h-5 text-[#2D7A3A]" />
+                    <CheckCircleIcon className="w-5 h-5 text-[#2D7A3A]" />
                   </div>
                   <div>
                     <p className="font-heading font-bold text-xl text-[#1B3A6B]">
-                      500+
+                      99%
                     </p>
-                    <p className="text-xs text-gray-500 font-body">Partners</p>
+                    <p className="text-xs text-gray-500 font-body">Claim Acceptance Rate</p>
                   </div>
                 </div>
                 <div className="h-1 bg-gray-100 rounded-full">
-                  <div className="h-1 bg-[#2D7A3A] rounded-full w-4/5" />
+                  <div className="h-1 bg-[#2D7A3A] rounded-full w-[99%]" />
                 </div>
               </div>
 
@@ -177,9 +177,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
           {/* Mobile Stats Row */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 lg:hidden">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
-              <p className="font-heading font-bold text-2xl text-white">500+</p>
+              <p className="font-heading font-bold text-2xl text-white">99%</p>
               <p className="text-white/60 text-xs font-body mt-1">
-                Healthcare Partners
+                Claim Acceptance Rate
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
