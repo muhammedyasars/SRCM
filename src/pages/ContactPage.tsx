@@ -137,10 +137,10 @@ export function ContactPage({ onNavigate: _onNavigate }: ContactPageProps) {
                     Phone
                   </p>
                   <a
-                    href="tel:+97100000000"
+                    href="tel:0562673951"
                     className="text-gray-600 text-sm font-body hover:text-[#2D7A3A] transition-colors">
 
-                    +971 XX XXX XXXX
+                    0562673951
                   </a>
                 </div>
               </div>
@@ -154,10 +154,10 @@ export function ContactPage({ onNavigate: _onNavigate }: ContactPageProps) {
                     Email
                   </p>
                   <a
-                    href="mailto:info@streamlinercm.com"
+                    href="mailto:contact@streamlinercms.com"
                     className="text-gray-600 text-sm font-body hover:text-[#2D7A3A] transition-colors">
 
-                    info@streamlinercm.com
+                    contact@streamlinercms.com
                   </a>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export function ContactPage({ onNavigate: _onNavigate }: ContactPageProps) {
                     Location
                   </p>
                   <span className="text-gray-600 text-sm font-body">
-                    Middle East & Beyond
+                    Al ain, Abudhabi,UAE
                   </span>
                 </div>
               </div>
@@ -199,10 +199,10 @@ export function ContactPage({ onNavigate: _onNavigate }: ContactPageProps) {
                     Business Hours
                   </p>
                   <p className="text-gray-600 text-sm font-body">
-                    Sun – Thu: 8:00 AM – 6:00 PM
+                    Monday-Friday-08:00-06:00
                   </p>
                   <p className="text-gray-500 text-xs font-body mt-0.5">
-                    24/7 Support Available
+                    Saturday and Sunday-closed
                   </p>
                 </div>
               </div>
