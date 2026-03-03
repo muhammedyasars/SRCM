@@ -3,7 +3,6 @@ import {
   CheckCircleIcon,
   ShieldCheckIcon,
   TrendingUpIcon,
-  UsersIcon,
   ClockIcon,
   StarIcon,
   ChevronRightIcon,
