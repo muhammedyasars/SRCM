@@ -90,7 +90,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               {/* Main Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/ChatGPT Image Mar 4, 2026, 12_33_23 AM.png"
+                  src="/images/home1.png"
                   alt="Healthcare professionals"
                   className="w-full h-[480px] object-cover" />
 
