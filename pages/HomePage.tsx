@@ -28,19 +28,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <main className="w-full">
       {/* ── HERO SECTION ── */}
-      <section className="hero-gradient min-h-screen flex items-center relative overflow-hidden pt-20">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 right-0 w-[600px] h-[600px] rounded-full bg-[#2D7A3A]/10 blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#243F7A]/30 blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-white/5" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/5" />
-        </div>
+      <section className="hero-gradient min-h-screen flex items-center relative overflow-hidden pt-20" style={{ backgroundImage: "url('/images/home3.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text Content */}
-            <div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-20 w-full">
+          {/* Desktop & Tablet - Left Aligned */}
+          <div className="hidden md:flex justify-start items-center min-h-[60vh]">
+            <div className="max-w-[600px] text-left">
               <h1 className="font-heading font-bold text-white leading-tight mb-6">
                 <span className="block text-5xl md:text-6xl lg:text-7xl">
                   Streamlining
@@ -80,93 +73,51 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </Link>
               </div>
             </div>
+          </div>
 
-            {/* Right: Image + Floating Stats */}
-            <div className="relative hidden lg:block">
-              {/* Main Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="/images/home1.png"
-                  alt="Healthcare professionals"
-                  className="w-full h-[480px] object-cover" />
+          {/* Mobile - Centered */}
+          <div className="md:hidden flex justify-center items-center min-h-[60vh] px-4">
+            <div className="max-w-[600px] text-center">
+              <h1 className="font-heading font-bold text-white leading-tight mb-6">
+                <span className="block text-5xl md:text-6xl lg:text-7xl">
+                  Streamlining
+                </span>
+                <span className="block text-5xl md:text-6xl lg:text-7xl text-[#3A9447]">
+                  Revenue.
+                </span>
+                <span className="block text-4xl md:text-5xl lg:text-6xl mt-1">
+                  Strengthening
+                </span>
+                <span className="block text-4xl md:text-5xl lg:text-6xl text-white/80">
+                  Healthcare.
+                </span>
+              </h1>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1B3A6B]/40 to-transparent" />
-              </div>
+              <p className="text-white/70 text-lg leading-relaxed font-body mb-10 max-w-xl mx-auto">
+                We help healthcare organizations achieve financial clarity,
+                operational efficiency, and sustainable growth through
+                end-to-end Revenue Cycle Management solutions.
+              </p>
 
-              {/* Floating Stat Cards */}
-              <div className="float-card absolute -left-12 top-12 bg-white rounded-2xl shadow-xl p-4 w-44">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-xl bg-[#e8f5ea] flex items-center justify-center">
-                    <CheckCircleIcon className="w-5 h-5 text-[#2D7A3A]" />
-                  </div>
-                  <div>
-                    <p className="font-heading font-bold text-xl text-[#1B3A6B]">
-                      99%
-                    </p>
-                    <p className="text-xs text-gray-500 font-body">Claim Acceptance Rate</p>
-                  </div>
-                </div>
-                <div className="h-1 bg-gray-100 rounded-full">
-                  <div className="h-1 bg-[#2D7A3A] rounded-full w-[99%]" />
-                </div>
-              </div>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Link
+                  href={ROUTES.SERVICES}
+                  onClick={() => handleNav('services')}
+                  className="btn-primary text-base">
 
-              <div className="float-card absolute -right-8 top-24 bg-white rounded-2xl shadow-xl p-4 w-44">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-xl bg-[#EEF2F9] flex items-center justify-center">
-                    <BarChart3Icon className="w-5 h-5 text-[#1B3A6B]" />
-                  </div>
-                  <div>
-                    <p className="font-heading font-bold text-xl text-[#1B3A6B]">
-                      98%
-                    </p>
-                    <p className="text-xs text-gray-500 font-body">Accuracy</p>
-                  </div>
-                </div>
-                <div className="h-1 bg-gray-100 rounded-full">
-                  <div className="h-1 bg-[#1B3A6B] rounded-full w-[98%]" />
-                </div>
-              </div>
+                  Explore Our Services
+                  <ArrowRightIcon className="w-5 h-5" />
+                </Link>
+                <Link
+                  href={ROUTES.CONTACT}
+                  onClick={() => handleNav('contact')}
+                  className="btn-outline-white text-base">
 
-              <div className="float-card absolute -left-8 bottom-16 bg-white rounded-2xl shadow-xl p-4 w-44">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-xl bg-[#e8f5ea] flex items-center justify-center">
-                    <StarIcon className="w-5 h-5 text-[#2D7A3A]" />
-                  </div>
-                  <div>
-                    <p className="font-heading font-bold text-xl text-[#1B3A6B]">
-                      15+
-                    </p>
-                    <p className="text-xs text-gray-500 font-body">
-                      Years Exp.
-                    </p>
-                  </div>
-                </div>
-                <div className="h-1 bg-gray-100 rounded-full">
-                  <div className="h-1 bg-[#2D7A3A] rounded-full w-3/4" />
-                </div>
-              </div>
-
-              <div className="float-card absolute -right-4 bottom-8 bg-white rounded-2xl shadow-xl p-4 w-44">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-xl bg-[#EEF2F9] flex items-center justify-center">
-                    <ClockIcon className="w-5 h-5 text-[#1B3A6B]" />
-                  </div>
-                  <div>
-                    <p className="font-heading font-bold text-xl text-[#1B3A6B]">
-                      24/7
-                    </p>
-                    <p className="text-xs text-gray-500 font-body">Support</p>
-                  </div>
-                </div>
-                <div className="h-1 bg-gray-100 rounded-full">
-                  <div className="h-1 bg-[#1B3A6B] rounded-full w-full" />
-                </div>
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>
-
-          {/* Mobile Stats Row */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 lg:hidden">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center border border-white/20">
               <p className="font-heading font-bold text-2xl text-white">99%</p>
