@@ -75,7 +75,7 @@ const metadata = {
     title: 'Streamline RCM',
     description: 'Healthcare Revenue Cycle Management Solutions',
     icons: {
-        icon: '/WhatsApp_Image_2026-02-25_at_2.06.59_PM-removebg-preview.png'
+        icon: '/image.png'
     }
 };
 function RootLayout({ children }) {
