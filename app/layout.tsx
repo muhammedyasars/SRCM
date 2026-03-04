@@ -10,8 +10,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Streamline RCM logo Nuvica Medical Hospital website UI design',
+  title: 'Streamline RCM',
   description: 'Healthcare Revenue Cycle Management Solutions',
+  icons: {
+    icon: '/WhatsApp_Image_2026-02-25_at_2.06.59_PM-removebg-preview.png',
+  },
 };
 
 export default function RootLayout({

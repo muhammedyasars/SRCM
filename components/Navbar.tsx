@@ -89,11 +89,11 @@ export function Navbar({ activePage, onNavigate }: NavbarProps) {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:0562673951"
+              href="tel:+971 0562673951"
               className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[#2D7A3A] transition-colors">
 
               <PhoneIcon className="w-4 h-4" />
-              <span className="font-body">0562673951</span>
+              <span className="font-body">+971 0562673951</span>
             </a>
             <Link
               href={ROUTES.CONTACT}

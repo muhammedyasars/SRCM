@@ -139,10 +139,10 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                     Phone
                   </p>
                   <a
-                    href="tel:0562673951"
+                    href="tel:+971 0562673951"
                     className="text-gray-600 text-sm font-body hover:text-[#2D7A3A] transition-colors">
 
-                    0562673951
+                    +971 0562673951
                   </a>
                 </div>
               </div>

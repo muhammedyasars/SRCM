@@ -149,10 +149,10 @@ export function Footer({ onNavigate }: FooterProps) {
                     Phone
                   </p>
                   <a
-                    href="tel:+97100000000"
+                    href="tel:+971 0562673951"
                     className="text-gray-300 text-sm hover:text-white transition-colors font-body">
 
-                    +971 XX XXX XXXX
+                   +971 0562673951
                   </a>
                 </div>
               </li>
@@ -165,10 +165,10 @@ export function Footer({ onNavigate }: FooterProps) {
                     Email
                   </p>
                   <a
-                    href="mailto:info@streamlinercm.com"
+                    href="mailto:contact@streamlinercms.com"
                     className="text-gray-300 text-sm hover:text-white transition-colors font-body">
 
-                    info@streamlinercm.com
+                    contact@streamlinercms.com
                   </a>
                 </div>
               </li>
@@ -194,7 +194,7 @@ export function Footer({ onNavigate }: FooterProps) {
                     Location
                   </p>
                   <span className="text-gray-300 text-sm font-body">
-                    Middle East & Beyond
+                    Al ain, Abudhabi,UAE
                   </span>
                 </div>
               </li>
