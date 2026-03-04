@@ -42,12 +42,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Left: Text Content */}
             <div>
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-                <div className="w-2 h-2 rounded-full bg-[#3A9447] animate-pulse" />
-                <span className="text-white/90 text-sm font-body font-medium">
-                  Trusted RCM Partner in the Middle East
-                </span>
-              </div>
 
               <h1 className="font-heading font-bold text-white leading-tight mb-6">
                 <span className="block text-5xl md:text-6xl lg:text-7xl">
