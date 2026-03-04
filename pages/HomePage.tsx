@@ -224,7 +224,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700&auto=format&fit=crop"
+                  src="/images/home2.png"
                   alt="Healthcare team"
                   className="w-full h-[450px] object-cover" />
 
