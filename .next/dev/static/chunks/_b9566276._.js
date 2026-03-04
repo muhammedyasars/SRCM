@@ -834,7 +834,9 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.s([
     "ServicesPage",
-    ()=>ServicesPage
+    ()=>ServicesPage,
+    "default",
+    ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheckIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheckIcon>");
@@ -866,7 +868,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 40,
+                lineNumber: 39,
                 columnNumber: 11
             }, this),
             title: 'Preauthorization',
@@ -886,7 +888,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 56,
+                lineNumber: 55,
                 columnNumber: 11
             }, this),
             title: 'Clinical Documentation Improvement',
@@ -906,7 +908,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 72,
+                lineNumber: 71,
                 columnNumber: 11
             }, this),
             title: 'Revenue Optimization',
@@ -926,7 +928,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 88,
+                lineNumber: 87,
                 columnNumber: 11
             }, this),
             title: 'Claims Management',
@@ -946,7 +948,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 104,
+                lineNumber: 103,
                 columnNumber: 11
             }, this),
             title: 'Claim Scrubbing',
@@ -966,7 +968,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 120,
+                lineNumber: 119,
                 columnNumber: 11
             }, this),
             title: 'Denial Management',
@@ -986,7 +988,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 136,
+                lineNumber: 135,
                 columnNumber: 11
             }, this),
             title: 'Quality Assurance & Regulation Compliance',
@@ -1006,7 +1008,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 152,
+                lineNumber: 151,
                 columnNumber: 11
             }, this),
             title: 'Medical Transcription',
@@ -1026,7 +1028,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 168,
+                lineNumber: 167,
                 columnNumber: 11
             }, this),
             title: 'RCM Consultancy',
@@ -1046,7 +1048,7 @@ function ServicesPage({ onNavigate }) {
                 className: "w-7 h-7"
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 184,
+                lineNumber: 183,
                 columnNumber: 11
             }, this),
             title: 'Insurance Contract Services',
@@ -1073,12 +1075,12 @@ function ServicesPage({ onNavigate }) {
                             className: "absolute top-0 right-0 w-96 h-96 rounded-full bg-[#2D7A3A]/10 blur-3xl"
                         }, void 0, false, {
                             fileName: "[project]/pages/ServicesPage.tsx",
-                            lineNumber: 204,
+                            lineNumber: 203,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/ServicesPage.tsx",
-                        lineNumber: 203,
+                        lineNumber: 202,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1091,12 +1093,12 @@ function ServicesPage({ onNavigate }) {
                                     children: "Comprehensive RCM Solutions"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                    lineNumber: 208,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/ServicesPage.tsx",
-                                lineNumber: 207,
+                                lineNumber: 206,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1104,7 +1106,7 @@ function ServicesPage({ onNavigate }) {
                                 children: "Our Services"
                             }, void 0, false, {
                                 fileName: "[project]/pages/ServicesPage.tsx",
-                                lineNumber: 212,
+                                lineNumber: 211,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1112,13 +1114,13 @@ function ServicesPage({ onNavigate }) {
                                 children: "Technology-enabled RCM solutions designed to optimize every stage of the revenue cycle — from preauthorization to final collections."
                             }, void 0, false, {
                                 fileName: "[project]/pages/ServicesPage.tsx",
-                                lineNumber: 215,
+                                lineNumber: 214,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/ServicesPage.tsx",
-                        lineNumber: 206,
+                        lineNumber: 205,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1132,23 +1134,23 @@ function ServicesPage({ onNavigate }) {
                                 fill: "#F0F4F8"
                             }, void 0, false, {
                                 fileName: "[project]/pages/ServicesPage.tsx",
-                                lineNumber: 226,
+                                lineNumber: 225,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/pages/ServicesPage.tsx",
-                            lineNumber: 221,
+                            lineNumber: 220,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/ServicesPage.tsx",
-                        lineNumber: 220,
+                        lineNumber: 219,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 202,
+                lineNumber: 201,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1167,7 +1169,7 @@ function ServicesPage({ onNavigate }) {
                                             children: service.icon
                                         }, void 0, false, {
                                             fileName: "[project]/pages/ServicesPage.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 243,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1178,7 +1180,7 @@ function ServicesPage({ onNavigate }) {
                                                     children: service.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                                    lineNumber: 250,
+                                                    lineNumber: 249,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1186,7 +1188,7 @@ function ServicesPage({ onNavigate }) {
                                                     children: service.fullDesc
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                                    lineNumber: 253,
+                                                    lineNumber: 252,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1198,7 +1200,7 @@ function ServicesPage({ onNavigate }) {
                                                                     className: `w-4 h-4 flex-shrink-0 ${service.color === 'navy' ? 'text-[#1B3A6B]' : 'text-[#2D7A3A]'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                                                    lineNumber: 259,
+                                                                    lineNumber: 258,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1206,50 +1208,50 @@ function ServicesPage({ onNavigate }) {
                                                                     children: h
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                                                    lineNumber: 262,
+                                                                    lineNumber: 261,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, h, true, {
                                                             fileName: "[project]/pages/ServicesPage.tsx",
-                                                            lineNumber: 258,
+                                                            lineNumber: 257,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                                    lineNumber: 256,
+                                                    lineNumber: 255,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/ServicesPage.tsx",
-                                            lineNumber: 249,
+                                            lineNumber: 248,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                    lineNumber: 243,
+                                    lineNumber: 242,
                                     columnNumber: 17
                                 }, this)
                             }, service.id, false, {
                                 fileName: "[project]/pages/ServicesPage.tsx",
-                                lineNumber: 239,
+                                lineNumber: 238,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/pages/ServicesPage.tsx",
-                        lineNumber: 237,
+                        lineNumber: 236,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/ServicesPage.tsx",
-                    lineNumber: 236,
+                    lineNumber: 235,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 235,
+                lineNumber: 234,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1262,7 +1264,7 @@ function ServicesPage({ onNavigate }) {
                             children: "Ready to Optimize Your Revenue Cycle?"
                         }, void 0, false, {
                             fileName: "[project]/pages/ServicesPage.tsx",
-                            lineNumber: 279,
+                            lineNumber: 278,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1270,7 +1272,7 @@ function ServicesPage({ onNavigate }) {
                             children: "Partner with Streamline RCM to transform your financial operations and focus on what matters most — delivering exceptional patient care."
                         }, void 0, false, {
                             fileName: "[project]/pages/ServicesPage.tsx",
-                            lineNumber: 282,
+                            lineNumber: 281,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1285,13 +1287,13 @@ function ServicesPage({ onNavigate }) {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/ServicesPage.tsx",
-                                            lineNumber: 293,
+                                            lineNumber: 292,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                    lineNumber: 288,
+                                    lineNumber: 287,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1300,34 +1302,35 @@ function ServicesPage({ onNavigate }) {
                                     children: "Join Our Team"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/ServicesPage.tsx",
-                                    lineNumber: 295,
+                                    lineNumber: 294,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/ServicesPage.tsx",
-                            lineNumber: 287,
+                            lineNumber: 286,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/pages/ServicesPage.tsx",
-                    lineNumber: 278,
+                    lineNumber: 277,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/ServicesPage.tsx",
-                lineNumber: 277,
+                lineNumber: 276,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/ServicesPage.tsx",
-        lineNumber: 200,
+        lineNumber: 199,
         columnNumber: 5
     }, this);
 }
 _c = ServicesPage;
+const __TURBOPACK__default__export__ = ServicesPage;
 var _c;
 __turbopack_context__.k.register(_c, "ServicesPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
