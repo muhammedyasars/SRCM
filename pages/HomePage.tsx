@@ -41,8 +41,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text Content */}
             <div>
-              {/* Badge */}
-
               <h1 className="font-heading font-bold text-white leading-tight mb-6">
                 <span className="block text-5xl md:text-6xl lg:text-7xl">
                   Streamlining
